@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NFL Teams</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <header class="hero">
+        <img class="hero-logo" src="https://a.espncdn.com/i/teamlogos/nfl/500/pit.png" alt="Steelers logo">
+        <div class="hero-title">
+          <h1>Select an NFL team</h1>
+          <p class="tag">Courtesy of 2025 Super Bowl Champions the Pittsburgh Steelers</p>
+        </div>
+      </header>
+
+      <div class="select-wrap">
+        <label for="team-select" class="visually-hidden">Team:</label>
+        <select id="team-select">
+          <option value="">-- choose a team --</option>
+        </select>
+      </div>
+
+      <section id="team-info" class="hidden">
+        <img id="team-logo" alt="team logo">
+        <div class="meta">
+          <h2 id="team-name"></h2>
+          <p><strong>Abbreviation:</strong> <span id="team-abbr"></span></p>
+          <p><strong>Division:</strong> <span id="team-division"></span></p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
